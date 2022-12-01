@@ -1,0 +1,54 @@
+{
+  "name": "내가만든 SNS",
+  "short_name": "내가만든 SNS",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "PWA연습용 페이지입니다 SNS앱 이에요",
+  "dir": "auto",
+  "lang": "ko",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "https://thseogns.github.io/mili/",
+  "start_url": "https://thseogns.github.io/mili/",
+  "gcm_sender_id": "",
+  "gcm_user_visible_only": true,
+  "categories": [],
+  "screenshots": [
+    {
+      "src": "./img/KakaoTalk_20221130_103824997_04.jpg",
+      "sizes": "682x1440",
+      "type": "img/jng"
+    },
+    {
+      "src": "./img/KakaoTalk_20221129_223150176_01.jpg",
+      "sizes": "682x1440",
+      "type": "img/jng"
+    },
+    {
+      "src": "./img/KakaoTalk_20221129_223150176.jpg",
+      "sizes": "682x1440",
+      "type": "img/jng"
+    }
+  ],
+  "icons": [
+    {
+      "src": "./image/maskable_icon_x512(3).png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./image/maskable_icon_x128(3).png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./image/maskable_icon_x48(3).png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": []
+}

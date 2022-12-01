@@ -1,0 +1,877 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="image/maskable_icon_x512(3).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest.json" />
+
+    <script defer src="./js/main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        //서비스워커가 있을때(서비스워커 지원여부)
+        navigator.serviceWorker
+          .register("service-worker.js") //등록
+          .then(function (success) {
+            console.log("serviceworker 설치에 성공했습니다!!", success);
+          })
+          .catch(function (error) {
+            console.log("serviceworker 설치 실패 ㅠㅠ", error);
+          });
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="">
+      <div class="logo">
+        <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="burger_wrap">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+      </div>
+    </header>
+    <nav class="gnb_wrap">
+      <ul class="gnb">
+        <li><a href="#">기업문의</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">계정관리</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <div class="login"><a href="index_login.html">로그인</a></div>
+    </nav>
+    <div class="title">
+      <div class="title_word">
+        <h2 class="st">
+          <strong
+            >당신의 일상을 <br />
+            1밀리+</strong
+          >
+        </h2>
+        <p class="p"><strong>독서와 무제한 친해지리</strong></p>
+      </div>
+      <img src="./img/main-bg.0c2e95bfd550759a46367d3abb3d05df.png" alt="" />
+    </div>
+    <div class="section_1">
+      <p class="p">당신을 기다리는</p>
+      <p><strong>12만권</strong>의 도서</p>
+      <div class="container">
+        <ul class="s_gnb">
+          <li><a class="a pad" href="#">베스트 셀러</a></li>
+          <li><a class="b" href="#">신간 소개</a></li>
+          <li><a class="c" href="#">경재, 경영</a></li>
+          <li><a class="d" href="#">소설</a></li>
+          <li><a class="e" href="#">판타지 무협</a></li>
+          <li><a class="f" href="#">시</a></li>
+          <li><a class="g" href="#">자기개발</a></li>
+        </ul>
+
+        <ul id="one" class="book_list list A_list1 show">
+          <li>
+            <a href="index_book.html"
+              ><img src="./img/책 이미지/book1.webp" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book2.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book3.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book4.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book5.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book6.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list B_list2">
+          <li>
+            <a href="index_book2.html"
+              ><img src="./img/책 이미지/신간1.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간2.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간3.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간4.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간5.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간6.jpg" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list C_list3">
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간12.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간7.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간8.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간9.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간10.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간11.jpg" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list D_list4">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book1.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book2.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book3.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book4.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book5.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book6.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list E_list5">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book1.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book2.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book3.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book4.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book5.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book6.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list F_list6">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book1.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book2.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book3.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book4.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book5.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book6.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="one" class="book_list list G_list7">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book1.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book2.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book3.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book4.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book5.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book6.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list A_list1 show">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list B_list2">
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간12.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간7.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간8.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간9.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간10.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/신간11.jpg" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list C_list3">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list D_list4">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list E_list5">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list F_list6">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul id="two" class="book_list list G_list7">
+          <li>
+            <a href="#"><img src="./img/책 이미지/book7.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book8.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book9.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book10.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book11.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/책 이미지/book12.webp" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="bot_link">
+        <div class="arrow"></div>
+        <a href="index_login.html">
+          <p class="bot_link_p">
+            첫 달 무료 구독을 통해 <br />
+            어떤 도서가 있는지 확인해보세요
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="section_2">
+      <h2 class="p">
+        <strong>당신이 끝까지 읽을 책을 <br />알려주는 완독지수</strong>
+      </h2>
+
+      <h3>
+        520만 밀리 회원이 먼저 읽고<br />다 읽을 확률과 예상 시간을 알려드려요
+      </h3>
+      <div class="s2_container">
+        <img class="pimg" src="./img/오디오북/main.png" alt="" />
+        <ul>
+          <li><img src="./img/오디오북/holic.png" alt="" /></li>
+          <li><img src="./img/오디오북/miliPick.png" alt="" /></li>
+          <li><img src="./img/오디오북/hiden.png" alt="" /></li>
+          <li><img src="./img/오디오북/maina.png" alt="" /></li>
+        </ul>
+      </div>
+
+      <img class="bimg" src="./img/오디오북/word.png" alt="" />
+    </div>
+    <div class="section_3">
+      <div class="s3_cover">
+        <h1>
+          <strong>언제든 해지 가능! <br />첫 달 무료로 가볍게</strong>
+        </h1>
+        <h2>
+          상황에 맞게 원하는 요금제를<br />
+          자유롭게 선택하세요
+        </h2>
+        <div class="sub">
+          <h3><strong>전자책 정기구독</strong></h3>
+          <p>월 <strong>9,900</strong> 원</p>
+          <div>
+            118,800
+            <img
+              src="./img/가격정보/discount02.1b7dc622a702906821e8c9bf6120c15a.png"
+              alt=""
+            />
+          </div>
+          <p>연 <strong>99,000</strong> 원</p>
+          <p>밀리에서 제공하는 콘텐츠를 무제한으로</p>
+        </div>
+        <div class="sub">
+          <h3><strong>종이책 정기구독</strong></h3>
+          <p>월 <strong>15,900</strong> 원</p>
+          <div>
+            202,800
+            <img
+              src="./img/가격정보/discount.8f423f8b2d39ebc92448a033200683ab.png"
+              alt=""
+            />
+          </div>
+          <p>연 <strong>183,000</strong> 원</p>
+          <p>
+            밀리의 모든 콘텐츠를 무제한으로 보고 <br />
+            2달에 1번 종이책+전자책 배송까지
+          </p>
+        </div>
+      </div>
+      <div class="tip_box">
+        <div>
+          <img
+            src="./img/가격정보/price01.d638e23876085f686632b1e9410616c3.png"
+            alt=""
+          />
+          <p>
+            무료 체험 기간 동안 해지해도<br />
+            금액이 청구되지 않아요
+          </p>
+        </div>
+        <div>
+          <img
+            src="./img/가격정보/price02.94d35cb1e54610f94749dc24cb1b0e70.png"
+            alt=""
+          />
+          <p>
+            유료 결제되어도 사용 이력이<br />
+            없으면 즉시 환불해드려요
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section_4">
+      <div class="count_cover">
+        <span>누적 회원수</span>
+
+        <p><strong class="count">0</strong>명</p>
+      </div>
+      <div class="review_container">
+        <div class="word">
+          <h3>
+            <strong>밀리 회원들의 <br />리얼 리뷰</strong>
+          </h3>
+        </div>
+        <div class="review_cover">
+          <img
+            class="review_img"
+            src="./img/리뷰/appreview-bg02.b91114143369314c7e14931341b7fc7a.png"
+            alt=""
+          />
+          <ul class="review_box">
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>
+                첫달무료 신청 했고<br />
+                결제 수단 인증 받았<br />고 영수증도 받았는데<br />
+                구독궈 신청 외에 할<br />
+                수 있는 게 없음. 처음<br />
+                깔았을때와 결제 후의 <br />인터페이스에 변화가<br />
+                없음. 당일 처리 가능<br />했습니다. 고객 대...
+              </p>
+              <div class="id">
+                <span>서**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>
+                제가 좋아하는.책이.있어<br />
+                너무 좋았네요 ㅎㅎ
+              </p>
+              <div class="id">
+                <span>서**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>
+                쉽지 않겠죠…? 다른건<br />
+                다 너무 좋습니다~ 좀<br />
+                더 써보고 다시 남길게요~
+              </p>
+              <div class="id">
+                <span>신**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>다양한 책 편하게 <br />읽을수 있어 좋아요</p>
+              <div class="id">
+                <span>박**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>굿.</p>
+              <div class="id">
+                <span>이**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>
+                오디로북이라는걸 <br />처음써봤는데 잠잘떄<br />도 좋은거같아요.
+              </p>
+              <div class="id">
+                <span>김**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>생각보다 좋네요.</p>
+              <div class="id">
+                <span>손**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>구독 해지해도 무료<br />한달 남아서 편했어요.</p>
+              <div class="id">
+                <span>김**</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+              <img
+                src="./img/리뷰/star.9c83cc2791097e12e37d6d3a8afdd3fc.png"
+                alt=""
+              />
+
+              <p>
+                지하철 타고갈때<br />
+                보기편해서 좋아요.
+              </p>
+              <div class="id">
+                <span>김**</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section_5">
+      <img
+        src="./img/가격정보/review-bg.7113d143354a257d6ddad264072b913e.png"
+        alt=""
+      />
+      <div class="s5_cover">
+        <h1>자주 묻는 질문</h1>
+        <div class="q_box">
+          <a id="a" class="qus" href="#"><h2>안쓰면정말 환불해 주나요?</h2></a>
+        </div>
+        <div class="q_box">
+          <a id="b" class="qus" href="#"
+            ><h2>구독중 해지할 수 없나요? 수수료는 없나요?</h2></a
+          >
+        </div>
+        <div class="q_box">
+          <a id="c" class="qus" href="#"
+            ><h2>무료 혜택은 누구나 받을 수 있나요?</h2></a
+          >
+        </div>
+        <div class="q_box">
+          <a id="d" class="qus" href="#"
+            ><h2>어떤 기기에서 사용할 수 있나요?</h2></a
+          >
+        </div>
+      </div>
+      <div id="A" class="qus_back">
+        <div class="qus_back_box">
+          <h1>안쓰면 정말 환불해 주나요?</h1>
+          <p>
+            물론입니다. 결제 후 콘텐츠 다운로드 및 열람을 하지<br />
+            않으셨다면 전액 환불해 드리고 있어요. <br />
+            <br />
+
+            <strong>[밀리 > 관리 > 구독관리 > 결제 내역 확인]</strong><br />
+          </p>
+          <p>
+            에서 직접 환불이 가능하며,해결이 어려운 경우 고객센터로 문의해
+            주세요.
+          </p>
+        </div>
+      </div>
+      <div id="B" class="qus_back">
+        <div class="qus_back_box">
+          <h1>구독중 해지할 수 없나요? 수수료는 없나요?</h1>
+          <p>
+            다음달 부터 결제되지 않도록 수수료 없이 언제든지<br />
+            해지하실 수 있습니다.<br />
+            <br />
+
+            <strong> [밀리 > 관리 > 구독관리 > 자동결제 해지]</strong><br />
+          </p>
+          <p>메뉴를 통해 기간에 상관없이 직접 가능해요.</p>
+        </div>
+      </div>
+      <div id="C" class="qus_back">
+        <div class="qus_back_box">
+          <h1>무료 혜택은 누구나 받을 수 있나요?</h1>
+          <p>
+            네, 밀리 회원이라면 누구나 첫 정기구독 신청 시 <br />
+            1회 제공됩니다. <br />
+          </p>
+          <p>
+            첫 달 무료 또는 첫 주 무료 중 선택이 가능하며 무료<br />
+            기간에 따라 가격이 달라집니다. <br />
+            종이책+전자책 정기구독의 경우 첫 주 무료 혜택만<br />
+            제공됩니다. <br />
+            아직 신청하지 않으셨다면 바로 구독신청으로 혜택을 받아 보세요.
+          </p>
+        </div>
+      </div>
+      <div id="D" class="qus_back">
+        <div class="qus_back_box">
+          <h1>어떤 기기에서 사용할 수 있나요?</h1>
+          <p>
+            아래 기기와 버전에서 밀리를 사용할 수 있습니다.
+
+            <br />
+          </p>
+          <p>
+            - 휴대폰 / 태블릿 : iOS13, Android 6 이상 지원<br />
+            - PC : Mac Yosemite, Window 10 이상 지원<br />
+            - E ink : Android 4.4 이상 지원<br />
+            (크레마 그랑데, 크레마 카르타G, 이노스페이스원 공식 판매 기기, 교보
+            Sam 7.8 등)<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="sns_cover">
+        <h1><span>(주)</span>밀리의 서재</h1>
+        <div class="sns">
+          <a href="#">
+            <img
+              src="./img/푸터/sns-youtube.b399a84a750e221ded9fef98ddeca396.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/푸터/sns-facebook.3a7b1d9f3faea84dcb6091c956639408.png"
+              alt="#"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/푸터/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png"
+              alt="#"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/푸터/sns-kakaotalk.fa50e1326498ebcac6ba4a1e68f66882.png"
+              alt="#"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/푸터/sns-naver.506d566acd9761a32dca9bb7efb1eee5.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="address">
+        <p>
+          사업자등록번호 : 423-88-00370 <br />
+          호스팅 제공자 : (주)밀리의 서재<br />
+          통신판매업 신고번호 : 2016-서울마포-2012호
+        </p>
+        <address>
+          주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)
+        </address>
+        <p>
+          고객정보보호 책임자: 김태형(beiron@maile.town) <br />마케팅 제휴
+          문의:business
+        </p>
+      </div>
+      <div class="f_nav_cover">
+        <ul class="f_nav">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">청소년보호정책</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">B2B문의</a></li>
+          <li><a href="#">콘텐츠 제휴문의</a></li>
+          <li><a href="#">뷰어다운로드</a></li>
+          <li><a href="#">회사소개</a></li>
+        </ul>
+      </div>
+      <p>Copyright © 2022 밀리의 서재 All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
